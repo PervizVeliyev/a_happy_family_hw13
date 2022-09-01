@@ -1,15 +1,12 @@
 import java.io.*;
 import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException{
         Scanner scanner = new Scanner(System.in);
         FamilyController familyController = new FamilyController();
-        String fileName = "families.txt";
+        String fileName = "families.bin";
         File file = new File(fileName);
         System.out.println("Console application:");
 
@@ -25,8 +22,7 @@ public class Main {
                     8. Edit a family by its index in the general list.
                     9. Remove all children over the age of majority.
                     10. Save data to your computer.
-                    11. Write families to your binary text file.
-                    12. Download families from binary text.""");
+                    11. Download data from file to the application database.""");
 
             System.out.print("Your option:");
             String option = scanner.next();
@@ -35,11 +31,16 @@ public class Main {
             try {
                 switch (Integer.parseInt(option)) {
                     case 1:
-                        try(BufferedReader reader = new BufferedReader(new FileReader(file))){
-                            String line;
-                            while((line = reader.readLine()) != null) System.out.println(line);
-                        }catch (FileNotFoundException x) {
-                            System.out.printf("File `%s` not found.", fileName);}
+                        try(ObjectInputStream reader = new ObjectInputStream(new FileInputStream(file))) {
+                            List<Family> families = (List<Family>) reader.readObject();
+                            families.forEach(family -> System.out.printf("%d) %s\n",families.indexOf(family) + 1, family));
+                        }catch (FileNotFoundException e) {
+                            System.out.printf("File `%s` not found.", fileName);
+                        }catch (ClassNotFoundException e) {
+                            System.out.println("Class not found exception");
+                        }catch (EOFException e){
+                            break;
+                        }
                         break;
                     case 2:
                         familyController.displayAllFamilies();
@@ -141,67 +142,29 @@ public class Main {
                         familyController.deleteAllChildrenOlderThan(scanner.nextInt());
                         break;
                     case 10:
-                        try(BufferedWriter writer = new BufferedWriter(new FileWriter(file))){
-                            familyController.getAllFamilies().forEach(family -> {
+                        try(ObjectOutputStream writer = new ObjectOutputStream(new FileOutputStream(file))){
                                 try {
-                                    writer.write(String.format("%d)%s\n", familyController.getAllFamilies().indexOf(family) + 1,family.prettyFormat()));
+                                    writer.writeObject(familyController.getAllFamilies());
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
-                            });
                         }
+                        System.out.println("The data saved to the file \"families.bin\".");
                         break;
                     case 11:
-                        try(FileOutputStream f = new FileOutputStream("myBinaryData.bin");
-                            ObjectOutputStream o = new ObjectOutputStream(f)) {
-                            System.out.print("Please, enter the name of mother: ");
-                            String name3 = scanner.next();
-                            System.out.print("Please, enter the surname of mother: ");
-                            String surname3 = scanner.next();
-                            System.out.print("Please, enter the birth date of mother: ");
-                            String birthDate3 = scanner.next();
-                            System.out.print("Please, enter the iq of mother: ");
-                            int iq3 = scanner.nextInt();
-                            Human mother3 = new Woman(name3, surname3, birthDate3, iq3);
-                            System.out.print("Please, enter the name of father: ");
-                            String name4 = scanner.next();
-                            System.out.print("Please, enter the surname of father: ");
-                            String surname4 = scanner.next();
-                            System.out.print("Please, enter the birth date of father: ");
-                            String birthDate4 = scanner.next();
-                            System.out.print("Please, enter the iq of father: ");
-                            int iq4 = scanner.nextInt();
-                            Human father4 = new Man(name4, surname4, birthDate4, iq4);
-
-                            Family family = new Family(father4, mother3);
-                            System.out.println(family);
-
-                            o.writeObject(family);
-                        }
-                        catch (Exception e){
-                            System.out.println("A problem occurred during writing.");
-                            scanner.nextLine();
-                        }
-                        break;
-                    case 12:
-                        List<Family> data = new ArrayList<>();
-                        try(FileInputStream fi = new FileInputStream("myBinaryData.bin");
-                            ObjectInputStream oi = new ObjectInputStream(fi)){
-                            Family family;
-                            while((family = (Family) oi.readObject()) != null){
-                                System.out.println(family);
-                                data.add(family);
-                            }
-                            familyController.loadData(data);
+                        try(ObjectInputStream reader = new ObjectInputStream(new FileInputStream(file))){
+                            List<Family> dataBase = (List<Family>) reader.readObject();
+                            familyController.loadData(dataBase);
                         } catch (EOFException e) {
-                            scanner.nextLine();
+                            break;
                         } catch (ClassNotFoundException | FileNotFoundException e ){
                             System.out.println("A problem occurred.");
                             scanner.nextLine();
                         }
+                        System.out.println("The data downloaded.");
                         break;
                     default:
-                        System.out.println("Please, write a number between 1-10 or write \"exit\" to finish the application.\n");
+                        System.out.println("Please, write a number between 1-12 or write \"exit\" to finish the application.\n");
                         break;
                 }
             } catch (NumberFormatException | InputMismatchException e) {

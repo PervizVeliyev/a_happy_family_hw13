@@ -5,36 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45176471-5827-4910-b3cc-3ad02120b5d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CollectionFamilyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DayOfWeek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DomesticCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Family.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FamilyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FamilyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FamilyOverFlowException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FamilyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HumanCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IDog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IDomesticCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Man.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RoboCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Species.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Woman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FamilyServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FamilyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HumanEqualsHashCodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/families.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/families.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBinaryData.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +51,11 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -88,7 +67,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Unnamed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="a_happy_family_hw13" />
       <method v="2">
@@ -130,9 +109,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FamilyServiceTest" />
-        <item itemvalue="JUnit.FamilyTest" />
+        <item itemvalue="Application.Unnamed" />
         <item itemvalue="JUnit.HumanEqualsHashCodeTest" />
+        <item itemvalue="JUnit.FamilyTest" />
+        <item itemvalue="JUnit.FamilyServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +134,11 @@
       <workItem from="1662020005945" duration="12635000" />
       <workItem from="1662041814204" duration="1789000" />
       <workItem from="1662043675663" duration="1314000" />
-      <workItem from="1662045266632" duration="1083000" />
+      <workItem from="1662045266632" duration="2046000" />
+      <workItem from="1662058012937" duration="6224000" />
+      <workItem from="1662065379823" duration="2287000" />
+      <workItem from="1662067818160" duration="658000" />
+      <workItem from="1662068513557" duration="82000" />
     </task>
     <servers />
   </component>

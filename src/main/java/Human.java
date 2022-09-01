@@ -10,7 +10,7 @@ import java.util.Objects;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class Human{
+public class Human implements Serializable{
     private String name;
     private String surname;
     private long birthDate;                    // Unix Millis Timestamp
