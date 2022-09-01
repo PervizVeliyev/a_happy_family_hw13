@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="45176471-5827-4910-b3cc-3ad02120b5d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CollectionFamilyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DayOfWeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DomesticCat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Family.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FamilyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FamilyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FamilyOverFlowException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FamilyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HumanCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IDomesticCat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Man.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RoboCat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Species.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Woman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FamilyServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FamilyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HumanEqualsHashCodeTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E4LO3REVVPlSVj3vxZVCvtJpzD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Unnamed">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="a_happy_family_hw13" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FamilyServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a_happy_family_hw13" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FamilyServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FamilyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a_happy_family_hw13" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FamilyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HumanEqualsHashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a_happy_family_hw13" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HumanEqualsHashCodeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JUnit.FamilyServiceTest" />
+      <item itemvalue="JUnit.FamilyTest" />
+      <item itemvalue="JUnit.HumanEqualsHashCodeTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FamilyServiceTest" />
+        <item itemvalue="JUnit.FamilyTest" />
+        <item itemvalue="JUnit.HumanEqualsHashCodeTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45176471-5827-4910-b3cc-3ad02120b5d5" name="Changes" comment="" />
+      <created>1661849876366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661849876366</updated>
+      <workItem from="1661849878258" duration="1433000" />
+      <workItem from="1661890741779" duration="726000" />
+      <workItem from="1661927648970" duration="2089000" />
+      <workItem from="1661946272013" duration="3293000" />
+      <workItem from="1661952880908" duration="742000" />
+      <workItem from="1661954528805" duration="22000" />
+      <workItem from="1661969531196" duration="4203000" />
+      <workItem from="1662020005945" duration="12635000" />
+      <workItem from="1662041814204" duration="1789000" />
+      <workItem from="1662043675663" duration="1314000" />
+      <workItem from="1662045266632" duration="1083000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
