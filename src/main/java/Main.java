@@ -36,8 +36,10 @@ public class Main {
                             families.forEach(family -> System.out.printf("%d) %s\n",families.indexOf(family) + 1, family));
                         }catch (FileNotFoundException e) {
                             System.out.printf("File `%s` not found.", fileName);
+                            Logging.error(e.getMessage());
                         }catch (ClassNotFoundException e) {
                             System.out.println("Class not found exception");
+                            Logging.error(e.getMessage());
                         }catch (EOFException e){
                             break;
                         }
@@ -160,6 +162,7 @@ public class Main {
                         } catch (ClassNotFoundException | FileNotFoundException e ){
                             System.out.println("A problem occurred.");
                             scanner.nextLine();
+                            Logging.error(e.getMessage());
                         }
                         System.out.println("The data downloaded.");
                         break;
@@ -170,10 +173,12 @@ public class Main {
             } catch (NumberFormatException | InputMismatchException e) {
                 System.out.println("Please, provide a number.\n");
                 scanner.nextLine();
+                Logging.error(e.getMessage());
             }
             catch (DateTimeParseException e) {
                 System.out.println("Please, provide a date in a format \"dd/MM/yyyy\".\n");
                 scanner.nextLine();
+                Logging.error(e.getMessage());
             }
         }
     }
