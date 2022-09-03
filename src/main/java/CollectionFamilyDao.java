@@ -39,11 +39,11 @@ public class CollectionFamilyDao implements FamilyDao{
     public void saveFamily(Family family) {
         if(families.contains(family)) {
             families.set(families.indexOf(family), family);
-            Logging.info("saving changes to the existing family.");
+            Logging.info("saving changes to the existing family");
         }
         else {
             families.add(family);
-            Logging.info("adding a new family.");
+            Logging.info("adding a new family");
         }
     }
 
